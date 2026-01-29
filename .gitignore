@@ -1,0 +1,17 @@
+# Résultats & logs
+output/
+logs/
+
+# Données
+data/
+
+# Environnements
+miniconda3/
+anaconda_projects/
+.ipynb_checkpoints/
+.Rhistory
+miniconda.sh
+
+# Fichiers temporaires
+__pycache__/
+*.log

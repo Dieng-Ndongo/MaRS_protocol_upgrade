@@ -1,0 +1,51 @@
+name: pipeline_env
+channels:
+  - bioconda
+  - conda-forge
+  - anaconda
+  - conda
+  - gstr
+  - defaults
+dependencies:
+# Python
+  - python=3.10
+  - pip
+  - pip:
+    - streamlit
+# Bioinformatique / outils NGS
+  - fastqc
+  - multiqc
+  - bwa
+  - samtools
+  - bcftools
+  - bedtools
+  - gatk4
+  - trimmomatic
+  - cutadapt
+  - sickle
+  - seqtk
+  - bbmap # pour bbduck
+  - freebayes
+  - vardict
+  - vardict-java
+  - perl
+  - snpeff 
+  - snpsift
+  - picard
+# Java pour snpEff
+  - openjdk=21
+# Librairies Python utiles
+  - pandas 
+  - numpy 
+  - pyfaidx 
+  - tqdm
+  - plotly
+  - matplotlib
+  - seaborn
+  - pysam
+  - biopython
+  - reportlab
+# Variables d'environnement pour Java
+variables:
+   JAVA_HOME: $CONDA_PREFIX
+
